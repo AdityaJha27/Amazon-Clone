@@ -438,3 +438,250 @@ ul a {
 .copyright{
     padding-top: 5px;
 }
+
+
+@media (max-width: 1024px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .panel {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .panel-ops {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .shop-section {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .box {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+
+    .hero-section {
+        height: 250px;
+    }
+
+    .book-list img {
+        height: 170px;
+    }
+
+    .foot-panel2 {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px;
+    }
+
+    .foot-panel2 ul {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .nav-logo {
+        width: 80px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .nav-signin, 
+    .nav-return {
+        display: none;
+    }
+
+    /* Panel */
+    .panel {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .panel-ops {
+        width: 100%;
+        font-size: 0.75rem;
+    }
+
+    .panel-deals {
+        display: none;
+    }
+
+    /* Hero */
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-msg {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+
+    /* Shop section */
+    .shop-section {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .box-content img {
+        height: 120px;
+    }
+
+    .box-big img {
+        height: 200px;
+    }
+
+    /* Book slider */
+    .book-list img {
+        height: 140px;
+    }
+
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Sign in */
+    .btn-signin-yellow {
+        padding: 10px 40px;
+    }
+
+    /* Footer */
+    .foot-panel2 {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px;
+    }
+
+    .foot-panel2 ul {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .foot-panel4 {
+        font-size: 0.6rem;
+    }
+}
+
+
+
+/* Smooth transition globally */
+* {
+    transition: all 0.25s ease;
+}
+
+/*  Navbar hover glow */
+.border:hover {
+    border: 1.5px solid white;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 3px;
+}
+
+/*  Search bar focus effect */
+.search-input:focus {
+    outline: none;
+}
+
+.nav-search:focus-within {
+    box-shadow: 0 0 0 2px orange;
+}
+
+/*  Cards (boxes) upgrade */
+.box {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover lift effect */
+.box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/*  Image zoom effect */
+.box-content img,
+.box-big img {
+    transition: transform 0.3s ease;
+}
+
+.box-content img:hover,
+.box-big img:hover {
+    transform: scale(1.05);
+}
+
+/*  Links hover */
+.box p:hover {
+    text-decoration: underline;
+    color: #c7511f;
+}
+
+/*  Buttons upgrade */
+.btn-signin-yellow {
+    transition: all 0.3s ease;
+}
+
+.btn-signin-yellow:hover {
+    background-color: #f7ca00;
+    transform: scale(1.05);
+}
+
+/*  Slider buttons upgrade */
+.slider-btn {
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    transform: scale(1.1);
+    background-color: #e3e6e6;
+}
+
+/*  Footer links hover */
+ul a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/*  Back to top hover */
+.foot-panel1:hover {
+    background-color: #485769;
+    cursor: pointer;
+}
+
+/* Hero message hover */
+.hero-msg:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
